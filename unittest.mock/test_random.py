@@ -7,11 +7,11 @@ def roll():
 
 
 def test_roll_one():
-    with patch("demo_unittest_mock.test_random.random.randint", return_value=5):
+    with patch("test_random.random.randint", return_value=5):
         assert roll() == 5
 
 
-@patch("demo_unittest_mock.test_random.random.randint")
+@patch("test_random.random.randint")
 def test_roll_two(mock):
     mock.return_value = 100
     assert roll() == 100
