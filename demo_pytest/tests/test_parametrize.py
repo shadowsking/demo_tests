@@ -14,7 +14,7 @@ def mul(a, b):
     [
         (1, 2, 3),
         (2, 3, 5),
-    ]
+    ],
 )
 def test_add(a, b, excepted):
     assert add(a, b) == excepted
@@ -25,7 +25,7 @@ def test_add(a, b, excepted):
     [
         (1, 2, 2),
         (2, 3, 6),
-    ]
+    ],
 )
 def test_mul(a, b, excepted):
     assert mul(a, b) == excepted
